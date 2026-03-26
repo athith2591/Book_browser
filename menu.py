@@ -1,5 +1,5 @@
-from data_loader import read_and_create_title_text_dict
-import pandas as pd
+# from data_loader import read_and_create_title_text_dict
+# import pandas as pd
 
 # def show_books(books:dict):
 #     """A method that displays a list of books available to be choosen along with a serial number.
@@ -130,7 +130,7 @@ class ChooseOption:
     def __init__(self):
         pass
 
-    def choose_book(serial_no_book_dict):
+    def choose_book(self, serial_no_book_dict):
         """A method that takes the user input, validates its correctfullness and returns it.
 
         Args:
@@ -159,7 +159,7 @@ class ChooseOption:
                     return list(serial_no_book_dict.values())
 
 
-    def choose_analysis(serial_no_operation):
+    def choose_analysis(self, serial_no_operation):
         number_of_operations = len(serial_no_operation)
         while True: 
             user_choice = input("Please give your choice of the operation: ")

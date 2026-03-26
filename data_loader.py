@@ -76,5 +76,6 @@ class DataLoader:
         return result 
         
 if __name__ == "__main__":
-    load_data = DataLoader('books')
+    load_data = DataLoader('data')
     data = load_data.load_books()
+    print(data.keys())
