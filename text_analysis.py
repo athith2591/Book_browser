@@ -12,7 +12,7 @@ class TextAnalyzer:
         """
         self.text = text
 
-    def count_pattern(self, pattern):
+    def count_pattern(self):
         """A class method to count the patters.
 
         Args:
@@ -43,7 +43,7 @@ class TextAnalyzer:
             int: The total count of words.
         """
         count = len(re.findall(r'\w+', self.text))
-        print(f'he total word count is : {count})')
+        print(f'he total word count is : {count}')
         return count
 
     def count_lines(self):
