@@ -1,8 +1,10 @@
+import os
 from book_browser import Dispaly, ChooseOption
 from book_browser import TextAnalyzer
 from book_browser import DataLoader
 
-PATH = 'data'
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+PATH = os.path.join(BASE_DIR, 'data')
 
 def start_book_browser():
     """The main method to start the book browser.
