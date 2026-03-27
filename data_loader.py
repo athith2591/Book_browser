@@ -68,9 +68,9 @@ class DataLoader:
         for filename in os.listdir(self.path):
             if filename.endswith(".txt"):
                 file_path = os.path.join(self.path, filename)
-
                 with open(file_path, "r", encoding="utf-8") as f:
                     content = f.read()
+            filename = filename.replace('.txt', '')
             result[filename] = content
         
         return result 
